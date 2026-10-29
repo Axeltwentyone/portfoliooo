@@ -24,7 +24,7 @@ export default function DiagnosticTeaser() {
         <div data-reveal style={{ '--i': 2 }} className="rounded-[28px] bg-[#EFEAE2] dark:bg-[#1B1A17] p-5 shadow-[0_40px_80px_-40px_rgba(17,17,17,0.4)] ring-1 ring-pierre md:p-6">
           <div className="flex max-w-[85%] items-end gap-2">
             <span aria-hidden="true" className="mb-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-encre text-[11px] font-extrabold text-white">
-              t<span className="text-bronze">.</span>
+              A<span className="text-bronze">.</span>
             </span>
             <p className="rounded-2xl rounded-bl-md bg-white dark:bg-[#2A2825] px-4 py-2.5 text-[15px] text-encre">{first.title}</p>
           </div>

@@ -1,5 +1,5 @@
-// Le logo theLab. — le signe (deux cercles, l'intersection en bronze), « the » en grotesque très gras,
-// « Lab » en serif fine et étroite, un point bronze collé. Recréé en code pour rester net à toutes les tailles.
+// Le logo — le signe (deux cercles, l'intersection en bronze), « Axel » en grotesque très gras,
+// « Teky » en serif fine et étroite, un point bronze collé. Recréé en code pour rester net à toutes les tailles.
 export function Dot({ className = 'bg-encre' }) {
   return <span aria-hidden="true" className={`ml-[0.06em] inline-block size-[0.17em] rounded-full ${className}`} />
 }
@@ -22,10 +22,10 @@ export function Mark({ className = 'size-[1em]', ring = 'currentColor', lens = '
 
 export default function Logo({ className = '', dotClassName = 'bg-bronze', mark = false }) {
   return (
-    <span role="img" aria-label="theLab." className={`inline-flex items-baseline leading-none ${className}`}>
+    <span role="img" aria-label="Christ Axel Teky" className={`inline-flex items-baseline leading-none ${className}`}>
       {mark && <Mark className="mr-[0.28em] h-[0.78em] w-auto self-center" />}
-      <span aria-hidden="true" className="font-extrabold tracking-[-0.055em]">the</span>
-      <span aria-hidden="true" className="ml-[0.01em] font-lab text-[1.2em] font-normal tracking-[-0.045em]">Lab</span>
+      <span aria-hidden="true" className="font-extrabold tracking-[-0.055em]">Axel</span>
+      <span aria-hidden="true" className="ml-[0.2em] font-lab text-[1.2em] font-normal tracking-[-0.045em]">Teky</span>
       <span aria-hidden="true" className={`ml-[0.05em] inline-block size-[0.17em] rounded-full ${dotClassName}`} />
     </span>
   )

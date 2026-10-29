@@ -2,7 +2,7 @@
 
 @theme {
   --color-encre: #111111;
-  /* Charte theLab v1 : papier, encre, pierre, cendre, bronze (rouge en variante occasionnelle) */
+  /* Charte v1 : papier, encre, pierre, cendre, bronze (rouge en variante occasionnelle) */
   --color-pierre: #D9D5CC;
   --color-bronze: #A9774A;
   --color-fond: #F3F2EE;
@@ -89,8 +89,4 @@ html.reveal-ready [data-reveal-stagger][data-revealed] > * {
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
 
-/* Le curseur point bronze ne remplace la souris que sur un vrai pointeur */
-@media (pointer: fine) {
-  .has-dot-cursor, .has-dot-cursor * { cursor: none; }
-}
 

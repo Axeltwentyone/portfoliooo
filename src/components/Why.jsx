@@ -149,7 +149,7 @@ export default function Why() {
     <section id="pourquoi" className="mx-auto max-w-[1440px] px-5 pb-20 md:px-[72px] md:pb-32">
       <div data-reveal className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="label text-gris">Pourquoi le lab ?</p>
+          <p className="label text-gris">Pourquoi moi ?</p>
           <h2 className="mt-4 max-w-4xl text-[clamp(2.1rem,5.3vw,4.75rem)] font-extrabold leading-none tracking-[-0.045em]">
             Un partenaire,<br /><span className="text-gris">pas un prestataire</span><Dot className="bg-bronze" />
           </h2>

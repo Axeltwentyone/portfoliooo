@@ -1,13 +1,8 @@
 import { useEffect, useId, useState } from 'react'
 
-// Mode clair / sombre. Par défaut on suit le réglage de l'appareil ; un choix fait sur le site est retenu.
+// Mode clair / sombre. Clair par défaut ; un choix fait sur le site est retenu.
 // La classe `dark` est posée sur <html> dès le chargement (script dans index.html) pour éviter un flash.
 const KEY = 'thelab-theme'
-const media = () => window.matchMedia('(prefers-color-scheme: dark)')
-
-const stored = () => {
-  try { return localStorage.getItem(KEY) } catch { return null }
-}
 const current = () => (document.documentElement.classList.contains('dark') ? 'dark' : 'light')
 
 function apply(theme) {
@@ -40,15 +35,8 @@ export function useTheme() {
   const [theme, setTheme] = useState(current)
   useEffect(() => {
     const onChange = (e) => setTheme(e.detail)
-    // Sans choix enregistré, on suit l'appareil s'il change (ex. passage auto en sombre le soir)
-    const onSystem = (e) => { if (!stored()) apply(e.matches ? 'dark' : 'light') }
-    const m = media()
     window.addEventListener('themechange', onChange)
-    m.addEventListener('change', onSystem)
-    return () => {
-      window.removeEventListener('themechange', onChange)
-      m.removeEventListener('change', onSystem)
-    }
+    return () => window.removeEventListener('themechange', onChange)
   }, [])
   return theme
 }

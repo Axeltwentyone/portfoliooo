@@ -5,7 +5,7 @@ import useAbidjanClock from '../hooks/useAbidjanClock.js'
 
 const pad = (n) => String(n).padStart(2, '0')
 
-// Bande « en direct » : ce qu'on fait maintenant, l'heure au studio, les places restantes.
+// Bande « en direct » : ce qu'on fait maintenant, l'heure à Abidjan, les places restantes.
 function LiveStatus() {
   const { status } = useContent()
   const { availability: AVAILABILITY, now: NOW, hours: HOURS } = status
@@ -26,7 +26,7 @@ function LiveStatus() {
             <span className="absolute inset-0 animate-ping rounded-full bg-bronze opacity-60" />
             <span className="relative size-2 rounded-full bg-bronze" />
           </span>
-          En ce moment au studio
+          En ce moment
         </p>
         <p className="relative mt-1 h-[1.5em] overflow-hidden text-[15px]" aria-live="polite">
           {NOW.map((line, k) => (
@@ -46,7 +46,7 @@ function LiveStatus() {
         <p className="label text-gris">Abidjan</p>
         <p className="mt-1 text-[15px] tabular-nums">
           {pad(h)}:{pad(m)}<span className="text-doux">:{pad(s)}</span>
-          <span className="ml-2 text-gris">· {open ? 'Studio ouvert' : `Fermé, réouverture ${HOURS.open} h`}</span>
+          <span className="ml-2 text-gris">· {open ? 'Disponible' : `Fermé, réouverture ${HOURS.open} h`}</span>
         </p>
       </div>
 
@@ -54,7 +54,7 @@ function LiveStatus() {
         <p className="label text-gris">Disponibilité</p>
         <p className="mt-1 flex flex-wrap items-baseline gap-x-3 text-[15px]">
           {AVAILABILITY}
-          <a href={whatsappLink('Bonjour theLab ! J’aimerais réserver une place pour mon projet.')} target="_blank" rel="noreferrer" className="border-b border-encre text-sm font-medium transition-colors hover:border-bronze hover:text-bronze">
+          <a href={whatsappLink('Bonjour Axel ! J’aimerais réserver une place pour mon projet.')} target="_blank" rel="noreferrer" className="border-b border-encre text-sm font-medium transition-colors hover:border-bronze hover:text-bronze">
             Réserver ↗
           </a>
         </p>
@@ -63,7 +63,7 @@ function LiveStatus() {
   )
 }
 
-// Le mot du milieu change : ce que le studio construit
+// Le mot du milieu change : ce que je construis
 const WORDS = ['sites', 'boutiques', 'applications']
 
 function RotatingWord() {
@@ -112,7 +112,7 @@ export default function Hero() {
 
       <div className="hero-line-fade mt-10 flex flex-col gap-6 md:mt-14 md:flex-row md:items-center md:justify-between">
         <p className="max-w-md text-[17px] font-light leading-relaxed text-gris md:text-lg">
-          Un studio web &amp; mobile à Abidjan. On conçoit avec vous, on livre ce qu’on a promis, et on reste.
+          Développeur fullstack web &amp; mobile à Abidjan. On conçoit avec vous, on livre ce qu’on a promis, et on reste.
         </p>
         <a
           href={whatsappLink()}

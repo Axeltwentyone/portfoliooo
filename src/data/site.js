@@ -1,6 +1,6 @@
 // Toutes les infos à modifier facilement se trouvent ici.
-export const WHATSAPP_NUMBER = '2250797589617'
-export const EMAIL = 'thelab2225@gmail.com'
+export const WHATSAPP_NUMBER = '2250143998478'
+export const EMAIL = 'axelteky333@gmail.com'
 
 export const SOCIALS = [
   { label: 'Instagram', href: 'https://www.instagram.com/devlab.ci/' },
@@ -9,7 +9,7 @@ export const SOCIALS = [
 
 export const AVAILABILITY = '2 places ce trimestre'
 
-// Statut en direct du Hero : ce qui tourne au studio en ce moment (défile tout seul).
+// Statut en direct du Hero : ce qui tourne en ce moment (défile tout seul).
 // TODO : garder ces lignes à jour, elles doivent rester vraies.
 export const NOW = [
   'On construit Subci, l’app d’abonnements partagés',
@@ -17,7 +17,7 @@ export const NOW = [
   'On fait évoluer ShopTonGba',
 ]
 
-// Horaires du studio, heure d'Abidjan. TODO : vérifier.
+// Horaires, heure d'Abidjan. TODO : vérifier.
 export const HOURS = { open: 8, close: 19, days: [1, 2, 3, 4, 5, 6] } // lundi → samedi
 
 export const PROJECTS = [
@@ -169,7 +169,7 @@ export const REASONS = [
   { id: 'reste', title: 'On reste', text: 'Après la mise en ligne, on corrige, on fait évoluer et on vous conseille.' },
 ]
 
-// Section « La méthode theLab ». TODO : ajuster à ta façon de travailler.
+// Section « Ma méthode ». TODO : ajuster à ta façon de travailler.
 export const STEPS = [
   { title: 'Un message', text: 'Vous nous écrivez sur WhatsApp. On répond sous 24 h et on cale un appel pour comprendre votre activité.' },
   { title: 'Un prix clair', text: 'On fixe ensemble le contenu, le prix et la date de livraison. Rien ne change ensuite sans votre accord.' },

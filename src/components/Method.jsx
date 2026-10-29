@@ -42,7 +42,7 @@ function Chat({ on }) {
   return (
     <div className="flex flex-col gap-2 text-[13px]">
       <p className="ml-auto max-w-[85%] rounded-2xl rounded-br-md bg-[#D9FDD3] dark:bg-[#1F4D3A] px-3 py-2 text-encre transition-all duration-500" style={{ opacity: on ? 1 : 0, translate: on ? '0 0' : '0 8px' }}>
-        Bonjour theLab ! J’aimerais parler d’un projet.
+        Bonjour Axel ! J’aimerais parler d’un projet.
         <span className="ml-2 text-[10px] text-[#53BDEB]">✓✓</span>
       </p>
       <p className="max-w-[85%] rounded-2xl rounded-bl-md bg-white px-3 py-2 text-encre transition-all duration-500" style={{ opacity: on ? 1 : 0, translate: on ? '0 0' : '0 8px', transitionDelay: on ? '500ms' : '0ms' }}>
@@ -127,7 +127,7 @@ export default function Method() {
     <section id="methode" className="mx-auto max-w-[1440px] px-5 pb-20 md:px-[72px] md:pb-32">
       <div data-reveal className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="label text-gris">La méthode theLab</p>
+          <p className="label text-gris">Ma méthode</p>
           <h2 className="mt-4 text-[clamp(2.1rem,5.3vw,4.75rem)] font-extrabold leading-none tracking-[-0.045em]">
             Du premier message<br /><span className="text-gris">à la mise en ligne</span><Dot className="bg-bronze" />
           </h2>

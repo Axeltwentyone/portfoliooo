@@ -180,15 +180,12 @@ export default function ProjectPage({ id }) {
         </h2>
         <div className="flex flex-wrap gap-3">
           <a
-            href={whatsappLink(`Bonjour theLab ! J’ai vu le projet ${p.name}, j’aimerais quelque chose de similaire. On peut en parler ?`)}
+            href={whatsappLink(`Bonjour Axel ! J’ai vu le projet ${p.name}, j’aimerais quelque chose de similaire. On peut en parler ?`)}
             target="_blank"
             rel="noreferrer"
             className="rounded-full bg-encre px-6 py-4 text-[15px] font-medium text-white transition-colors hover:bg-bronze"
           >
             Écrire sur WhatsApp ↗
-          </a>
-          <a href="/formules" className="rounded-full border border-pierre px-6 py-4 text-[15px] font-medium transition-colors hover:border-encre">
-            Voir les formules
           </a>
         </div>
       </section>

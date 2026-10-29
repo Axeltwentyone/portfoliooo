@@ -20,7 +20,7 @@ export function ContentProvider({ children }) {
 
 export const useContent = () => useContext(ContentContext)
 
-const DEFAULT_MESSAGE = 'Bonjour theLab ! J’aimerais parler d’un projet.'
+const DEFAULT_MESSAGE = 'Bonjour Axel ! J’aimerais parler d’un projet.'
 export const waLink = (number, message = DEFAULT_MESSAGE) =>
   `https://wa.me/${String(number).replace(/\D/g, '')}?text=${encodeURIComponent(message)}`
 
@@ -35,5 +35,5 @@ export function buildMessage(questions, answers) {
   const phrases = questions.map((q) => q.options.find((o) => o.id === answers[q.id])?.phrase).filter(Boolean)
   if (!phrases.length) return DEFAULT_MESSAGE
   const [first, ...rest] = phrases
-  return `Bonjour theLab ! ${first.charAt(0).toUpperCase() + first.slice(1)}${rest.map((p) => `, ${p}`).join('')}. On peut en parler ?`
+  return `Bonjour Axel ! ${first.charAt(0).toUpperCase() + first.slice(1)}${rest.map((p) => `, ${p}`).join('')}. On peut en parler ?`
 }

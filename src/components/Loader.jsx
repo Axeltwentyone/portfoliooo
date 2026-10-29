@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 
 // Écran d'entrée : le texte se tape lettre par lettre, puis le rideau se lève.
-// Sur mobile, le texte passe sur deux lignes (« Bienvenue » / « dans le lab. ») pour rester grand sans toucher les bords.
+// Sur mobile, le texte passe sur deux lignes (« Bienvenue » / « chez Axel. ») pour rester grand sans toucher les bords.
 const LINE_1 = 'Bienvenue'
-const LINE_2 = 'dans le lab'
+const LINE_2 = 'chez Axel'
 const TEXT_LENGTH = LINE_1.length + 1 + LINE_2.length // +1 pour l'espace entre les deux
 const TYPE_DELAY = 60 // ms par lettre
 const START_DELAY = 250

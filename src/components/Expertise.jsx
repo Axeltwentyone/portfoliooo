@@ -13,9 +13,6 @@ export default function Expertise() {
               Ce qu’on sait<br /><span className="text-gris">faire, et bien</span><Dot className="bg-bronze" />
             </h2>
           </div>
-          <a href="/formules" className="self-start border-b border-encre pb-0.5 text-[15px] font-medium md:self-auto">
-            Voir les formules →
-          </a>
         </div>
 
         <ul data-reveal-stagger className="mt-12 border-b border-pierre md:mt-16">

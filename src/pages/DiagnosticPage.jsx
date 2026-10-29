@@ -74,9 +74,6 @@ function After() {
             </li>
           ))}
         </ol>
-        <a href="/studio#methode" className="mt-12 inline-flex items-center gap-2 border-b border-encre pb-0.5 text-[15px] font-medium transition-colors hover:border-bronze hover:text-bronze">
-          Toute la méthode <span aria-hidden="true">→</span>
-        </a>
       </div>
     </section>
   )

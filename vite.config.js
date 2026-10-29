@@ -52,7 +52,7 @@ function pageMeta() {
         const image = `${site}${m.image}`
         const tags = [
           `<meta property="og:type" content="website" />`,
-          `<meta property="og:site_name" content="theLab." />`,
+          `<meta property="og:site_name" content="Christ Axel Teky" />`,
           `<meta property="og:locale" content="fr_FR" />`,
           `<meta property="og:title" content="${esc(m.title)}" />`,
           `<meta property="og:description" content="${esc(m.description)}" />`,

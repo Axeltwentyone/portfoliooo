@@ -7,7 +7,7 @@ import { DEFAULT_META, allRoutes } from './content/seo.js'
 // Tous les liens internes du site (<a href="/projets">, <a href="#diagnostic">…) passent par lui :
 // - un chemin interne change de page sans recharger, derrière un rideau encre ;
 // - une ancre de la page en cours défile en douceur ;
-// - une ancre absente de la page en cours (#diagnostic depuis /studio) ramène à l'accueil, à cette section.
+// - une ancre absente de la page en cours (#diagnostic depuis /projets) ramène à l'accueil, à cette section.
 const RouterContext = createContext({ path: '/', navigate: () => {} })
 
 const COVER_MS = 420 // le rideau monte
@@ -132,7 +132,7 @@ export function usePageTitle(title, description) {
   useEffect(() => {
     const path = window.location.pathname.replace(/\/+$/, '') || '/'
     const fromBuild = allRoutes()[path.toLowerCase()]
-    document.title = title ? `${title} · theLab.` : DEFAULT_META.title
+    document.title = title ? `${title} · Christ Axel Teky` : DEFAULT_META.title
     document.querySelector('meta[name="description"]')?.setAttribute('content', description || fromBuild?.description || DEFAULT_META.description)
   }, [title, description])
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-// Heure d'Abidjan (UTC+0, pas d'heure d'été) mise à jour chaque seconde, et si le studio est ouvert
+// Heure d'Abidjan (UTC+0, pas d'heure d'été) mise à jour chaque seconde, et si c'est ouvert
 export default function useAbidjanClock(hours) {
   const read = () => {
     const d = new Date()

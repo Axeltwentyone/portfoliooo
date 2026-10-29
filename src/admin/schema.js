@@ -233,8 +233,8 @@ export const SECTIONS = [
   },
   {
     id: 'reasons',
-    title: 'Pourquoi le lab',
-    intro: 'Les cartes « Pourquoi le lab ? ». Les identifiants prix, reponse, ici et reste ont un visuel animé.',
+    title: 'Pourquoi moi',
+    intro: 'Les cartes « Pourquoi moi ? ». Les identifiants prix, reponse, ici et reste ont un visuel animé.',
     path: 'reasons',
     list: {
       itemName: 'Engagement',
@@ -281,8 +281,8 @@ export const SECTIONS = [
     title: 'Contact',
     path: 'contact',
     fields: [
-      { key: 'email', label: 'Adresse e-mail', placeholder: 'thelab2225@gmail.com', help: 'Affichée sur la page Contact et dans le pied de page.' },
-      { key: 'whatsapp', label: 'Numéro WhatsApp', placeholder: '2250797589617', help: 'Avec l’indicatif, sans + ni espaces. Utilisé par tous les boutons WhatsApp du site.' },
+      { key: 'email', label: 'Adresse e-mail', placeholder: 'axelteky333@gmail.com', help: 'Affichée sur la page Contact et dans le pied de page.' },
+      { key: 'whatsapp', label: 'Numéro WhatsApp', placeholder: '2250143998478', help: 'Avec l’indicatif, sans + ni espaces. Utilisé par tous les boutons WhatsApp du site.' },
       {
         key: 'socials',
         label: 'Réseaux sociaux',

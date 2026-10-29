@@ -5,14 +5,12 @@ import useAbidjanClock from '../hooks/useAbidjanClock.js'
 import { scrollToY } from '../motion/scroll.js'
 
 const pad = (n) => String(n).padStart(2, '0')
-// 2250797589617 → +225 07 97 58 96 17
+// 2250143998478 → +225 01 43 99 84 78
 export const prettyPhone = (n) => `+${n.slice(0, 3)} ${n.slice(3).replace(/(\d{2})(?=\d)/g, '$1 ')}`
 
 const LINKS = [
   { href: '/', label: 'Accueil' },
-  { href: '/studio', label: 'Le studio' },
   { href: '/projets', label: 'Projets' },
-  { href: '/formules', label: 'Formules' },
   { href: '/diagnostic', label: 'Diagnostic' },
   { href: '/contact', label: 'Contact' },
 ]
@@ -58,7 +56,7 @@ export function LiveLine({ className = '' }) {
           {open && <span className="absolute inset-0 animate-ping rounded-full bg-[#3BD16F] opacity-60" />}
           <span className={`relative size-2 rounded-full ${open ? 'bg-[#3BD16F]' : 'bg-doux'}`} />
         </span>
-        <span className="text-current">{open ? 'Studio ouvert' : `Fermé, réouverture ${status.hours.open} h`}</span>
+        <span className="text-current">{open ? 'Disponible' : `Fermé, réouverture ${status.hours.open} h`}</span>
       </span>
       <span>Abidjan · <span className="tabular-nums">{pad(h)}:{pad(m)}</span></span>
       <span>{status.availability}</span>
@@ -89,7 +87,7 @@ export function ContactCards({ className = '' }) {
       {contact.email && (
         <Card href={`mailto:${contact.email}`} eyebrow="Pour un devis détaillé" title="Écrire un e-mail" text={contact.email} />
       )}
-      {instagram && <Card href={instagram.href} external eyebrow="Nos coulisses" title="Suivre sur Instagram" text="Nos projets et la vie du studio." />}
+      {instagram && <Card href={instagram.href} external eyebrow="Nos coulisses" title="Suivre sur Instagram" text="Mes projets et les coulisses." />}
     </div>
   )
 }
@@ -126,7 +124,7 @@ export default function Closing({ compact = false }) {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {contact.email && <a href={`mailto:${contact.email}`} className="transition-colors hover:text-white">{contact.email}</a>}
             <span>Abidjan, Côte d’Ivoire</span>
-            <span>© {new Date().getFullYear()} theLab</span>
+            <span>© {new Date().getFullYear()} Christ Axel Teky</span>
             <ThemeToggle className="text-white" />
             <a href="#contenu" onClick={(e) => { e.preventDefault(); scrollToY(0) }} className="flex items-center gap-2 text-white transition-colors hover:text-bronze">
               Haut de page <span aria-hidden="true">↑</span>

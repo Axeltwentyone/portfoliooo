@@ -8,7 +8,7 @@ function BotBubble({ children, className = '' }) {
   return (
     <div className="chat-in flex max-w-[85%] items-end gap-2">
       <span aria-hidden="true" className="mb-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-encre text-[11px] font-extrabold text-white">
-        t<span className="text-bronze">.</span>
+        A<span className="text-bronze">.</span>
       </span>
       <div className={`rounded-2xl rounded-bl-md bg-white dark:bg-[#2A2825] px-4 py-2.5 text-[15px] leading-snug text-encre shadow-[0_1px_0_rgba(17,17,17,0.06)] ${className}`}>
         {children}
@@ -35,9 +35,9 @@ function UserBubble({ children, onEdit }) {
 
 function Typing() {
   return (
-    <div className="chat-in flex items-end gap-2" aria-label="theLab écrit…">
+    <div className="chat-in flex items-end gap-2" aria-label="Axel écrit…">
       <span aria-hidden="true" className="flex size-7 items-center justify-center rounded-full bg-encre text-[11px] font-extrabold text-white">
-        t<span className="text-bronze">.</span>
+        A<span className="text-bronze">.</span>
       </span>
       <span className="flex gap-1 rounded-2xl rounded-bl-md bg-white dark:bg-[#2A2825] px-4 py-3.5">
         {[0, 1, 2].map((k) => (
@@ -182,10 +182,10 @@ export default function Diagnostic({ page = false, onResult }) {
         <div className="flex h-[min(640px,78svh)] flex-col overflow-hidden rounded-[28px] bg-[#EFEAE2] dark:bg-[#1B1A17] shadow-[0_40px_80px_-40px_rgba(17,17,17,0.4)] ring-1 ring-pierre">
           <div data-tone="dark" className="flex items-center gap-3 bg-encre px-5 py-3.5 text-white">
             <span className="flex size-9 items-center justify-center rounded-full bg-white text-sm font-extrabold text-encre">
-              t<span className="text-bronze">.</span>
+              A<span className="text-bronze">.</span>
             </span>
             <div className="min-w-0 flex-1">
-              <p className="text-[15px] font-medium leading-tight">theLab.</p>
+              <p className="text-[15px] font-medium leading-tight">Christ Axel Teky</p>
               <p className="text-xs text-doux">{typing ? 'écrit…' : 'Diagnostic express · 30 s'}</p>
             </div>
             <span className="text-xs text-doux">{done ? QUESTIONS.length : step} / {QUESTIONS.length}</span>

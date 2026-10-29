@@ -9,9 +9,7 @@ import { ThemeToggle } from '../theme.jsx'
 // `spy` : sections de l'accueil qui l'activent quand on les fait défiler.
 const LINKS = [
   { href: '/', label: 'Accueil', page: '/', spy: [] },
-  { href: '/studio', label: 'Le studio', page: '/studio', spy: ['#studio'] },
   { href: '/projets', label: 'Projets', page: '/projets', spy: ['#index'] },
-  { href: '/formules', label: 'Formules', page: '/formules', spy: ['#formules'] },
   { href: '/diagnostic', label: 'Diagnostic', page: '/diagnostic', spy: ['#diagnostic'] },
   { href: '/contact', label: 'Contact', page: '/contact', spy: [] },
 ]
@@ -83,7 +81,7 @@ function Toggle({ open, hint, progress, onClick }) {
         <circle cx="32" cy="32" r={r} fill="none" stroke="var(--color-bronze)" strokeWidth="2" strokeLinecap="round"
           strokeDasharray={c} strokeDashoffset={c * (1 - progress)} style={{ opacity: open ? 0 : 1, transition: 'opacity .3s' }} />
       </svg>
-      {/* Fermé : le signe theLab ; ouvert : il tourne et laisse place à la croix */}
+      {/* Fermé : le signe ; ouvert : il tourne et laisse place à la croix */}
       <span
         aria-hidden="true"
         className="absolute transition-[transform,opacity] duration-700"
@@ -189,7 +187,7 @@ export default function TopBar() {
       {/* Haut de page : logo et heure d'Abidjan (ils défilent avec la page) */}
       <header className="relative z-30 pt-[env(safe-area-inset-top)]">
         <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-5 md:h-[84px] md:px-[72px]">
-          <a href="/" aria-label="theLab. — accueil">
+          <a href="/" aria-label="Christ Axel Teky — accueil">
             <Logo mark className="text-[22px] md:text-2xl" />
           </a>
           <div className="flex items-center gap-3 md:gap-4">

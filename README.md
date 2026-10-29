@@ -1,4 +1,4 @@
-# theLab. — site vitrine
+# Christ Axel Teky — portfolio
 
 React 19 + Vite + Tailwind CSS v4.
 

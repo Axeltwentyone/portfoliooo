@@ -99,7 +99,7 @@ export default function Admin() {
   const [history, setHistory] = useState(false)
 
   useEffect(() => {
-    document.title = 'Back-office · theLab.'
+    document.title = 'Back-office · Christ Axel Teky'
     api.me().then(() => setAuth('in')).catch(() => setAuth('out'))
   }, [])
 
