@@ -18,7 +18,7 @@ const mark = (ring, lens = '#A9774A', h = 56) =>
    <circle cx="22" cy="22" r="18" fill="none" stroke="${ring}" stroke-width="4"/>
    <circle cx="42" cy="22" r="18" fill="none" stroke="${ring}" stroke-width="4"/></svg>`
 const wordmark = (color, size) =>
-  `<span style="font:800 ${size}px 'Inter Tight';letter-spacing:-0.055em;color:${color}">the</span><span style="font:400 ${size * 1.2}px 'Instrument Serif';letter-spacing:-0.045em;color:${color}">Lab</span><span style="display:inline-block;width:${size * 0.17}px;height:${size * 0.17}px;border-radius:99px;background:#A9774A;margin-left:${size * 0.05}px"></span>`
+  `<span style="font:800 ${size}px 'Inter Tight';letter-spacing:-0.055em;color:${color}">Axel</span><span style="font:400 ${size * 1.2}px 'Instrument Serif';letter-spacing:-0.045em;color:${color};margin-left:${size * 0.2}px">Teky</span><span style="display:inline-block;width:${size * 0.17}px;height:${size * 0.17}px;border-radius:99px;background:#A9774A;margin-left:${size * 0.05}px"></span>`
 const page = (body, bg) => `<!doctype html><html><head><meta charset="utf-8"><link href="${FONTS}" rel="stylesheet">
   <style>*{margin:0;box-sizing:border-box}body{width:1200px;height:630px;background:${bg};overflow:hidden;font-family:'Inter Tight'}</style></head><body>${body}</body></html>`
 const img = (key) => `file://${path.join(ROOT, 'src/assets', `${key}.webp`)}`
@@ -29,8 +29,8 @@ const phone = (key, rot, extra = '') =>
 const pages = {
   default: page(`
     <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 96px">
-      <div style="font:400 15px 'DM Mono';letter-spacing:.14em;text-transform:uppercase;color:#6E6B64">Studio web &amp; mobile — Abidjan</div>
-      <div style="margin-top:28px;display:flex;align-items:center;gap:30px">${mark('#111', '#A9774A', 110)}<div style="display:flex;align-items:baseline;line-height:1">${wordmark('#111', 150)}</div></div>
+      <div style="font:400 15px 'DM Mono';letter-spacing:.14em;text-transform:uppercase;color:#6E6B64">Développeur fullstack — Abidjan</div>
+      <div style="margin-top:28px;display:flex;align-items:center;gap:30px">${mark('#111', '#A9774A', 110)}<div style="display:flex;align-items:baseline;line-height:1">${wordmark('#111', 120)}</div></div>
       <div style="margin-top:44px;font:400 34px 'Inter Tight';color:#111;max-width:900px;line-height:1.2">Des sites et des applications qui <span style="font:400 38px 'Instrument Serif'">tiennent</span>, pensés pour la Côte d’Ivoire.</div>
     </div>`, '#F3F2EE'),
 }
@@ -53,7 +53,7 @@ for (const p of PROJECTS.filter((x) => !x.href)) {
 }
 
 // Chrome headless + protocole DevTools : une capture par page
-const profile = path.join(tmpdir(), `thelab-og-${Date.now()}`)
+const profile = path.join(tmpdir(), `og-${Date.now()}`)
 const chrome = spawn(CHROME, ['--headless=new', '--remote-debugging-port=9334', `--user-data-dir=${profile}`, '--hide-scrollbars', '--allow-file-access-from-files', 'about:blank'], { stdio: 'ignore' })
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 try {
